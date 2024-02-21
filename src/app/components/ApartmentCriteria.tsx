@@ -16,43 +16,49 @@ export default function ApartmentCriteria() {
         {/* Decent Standard */}
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Decent Standard</h3>
-          <p>We seek a comfortable living space with modern amenities.</p>
+          <h3 className="text-xl font-semibold">God Standard</h3>
+          <p>Vi søker en konfertabel leilighet med god moderne standard</p>
         </div>
 
         {/* Bathroom */}
         <div className="flex flex-col items-center text-center">
           <FaBath className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Bathroom</h3>
-          <p>A clean, functional bathroom is a must.</p>
+          <h3 className="text-xl font-semibold">Baderom</h3>
+          <p>
+            Et rent, ryddig og funsjonabelt baderom med litt plass er ønsket.
+          </p>
         </div>
 
         {/* Kitchen */}
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Kitchen</h3>
-          <p>A kitchen where we can cook and enjoy meals together.</p>
+          <h3 className="text-xl font-semibold">Kjøkken</h3>
+          <p>Et kjøkken hvor vi kan lage mat og nyte måltider sammen.</p>
         </div>
 
         {/* Budget */}
         <div className="flex flex-col items-center text-center">
           <FaWallet className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Budget</h3>
-          <p>Up to 12,000 NOK/month, including electricity.</p>
+          <h3 className="text-xl font-semibold">Budsjett</h3>
+          <p>Opp til 12,500 NOK/måneden, inkludert strøm.</p>
         </div>
 
         {/* Size */}
         <div className="flex flex-col items-center text-center">
           <FaRulerCombined className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Size</h3>
+          <h3 className="text-xl font-semibold">Størrelse</h3>
           <p>Seeking spaces over 30m² for comfort and freedom.</p>
+          <p>Vi søker et sted med over 30m² for komfort og frihet.</p>
         </div>
 
         {/* Location */}
         <div className="flex flex-col items-center text-center">
           <FaMapMarkerAlt className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Location</h3>
-          <p>Central to Trondheim, for ease of access to daily needs.</p>
+          <h3 className="text-xl font-semibold">Lokalisasjon</h3>
+          <p>
+            Helst sentralt i Trondheim, med gode muligheter for buss og kort
+            tilgang til dagligvarebutikk.
+          </p>
         </div>
       </div>
     </div>

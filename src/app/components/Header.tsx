@@ -24,14 +24,18 @@ export default function Header() {
             </p>
           </motion.div>
           <p className="text-lg mt-5 md:mt-2 mb-3">
-            Vi er Magnus og Maren, et par på jakt etter vårt nye hjem. Vi er
-            begge yrkesaktive, med Magnus som IT-Ansvarlig og Maren som spion.
+            Vi er Magnus og Maren, et par på jakt etter en leilighet Trondheim.
+            Vi er begge studenter ved NTNU, med Magnus som går Dataingeniør og
+            Maren som nesten er ferdig med en Batchlor i Engelsk.
           </p>
           <p className="text-lg mt-5 md:mt-2">
-            Vi er på utkikk etter en leilighet som kan være vårt trygge og
-            koselige rede, med nok plass til både våre hobbyer og spion
-            sammenkomster. Vi verdsetter et rent og ryddig hjem, og vil behandle
-            din eiendom med største respekt og omsorg.
+            Vi er på utkikk etter en leilighet som kan være vårt nye hjem, med
+            nok plass til våre hobbyer daglige aktiviteter. Vi verdsetter et
+            ryddig hjem med god standard, og vil behandle din eiendom med den
+            største respekt.
+          </p>
+          <p className="text-lg mt-5 md:mt-2 font-semibold text-black">
+            Vi ønsker å starte leieforholdet i Juli
           </p>
 
           <div className="mt-5 gap-4 grid grid-cols-2 md:pr-24 pr-3">
