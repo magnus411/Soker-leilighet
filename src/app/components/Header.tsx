@@ -61,7 +61,7 @@ export default function Header() {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src={"images/02.jpg"}
+                src={"https://i.imgur.com/dd1GqLT.jpeg"}
                 alt="Description of the image"
                 width={800}
                 height={100}

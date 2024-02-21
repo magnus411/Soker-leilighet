@@ -7,7 +7,7 @@ export default function TeamSection() {
       title: "Magnus",
       introduction:
         "Driven by an insatiable curiosity, Magnus thrives on the thrill of discovery, whether it's in the digital realm or the great outdoors.",
-      imageUrl: "/images/05.jpg",
+      imageUrl: "https://i.imgur.com/UOfmzog.jpeg",
       altText: "Magnus",
       sections: [
         {
@@ -36,7 +36,7 @@ export default function TeamSection() {
       title: "Maren",
       introduction:
         "With a palette as vibrant as her personality, Maren finds joy in every hue of life, painting her days with creativity and inspiration.",
-      imageUrl: "/images/05.jpg",
+      imageUrl: "https://i.imgur.com/UOfmzog.jpeg",
       altText: "Maren",
       sections: [
         {
