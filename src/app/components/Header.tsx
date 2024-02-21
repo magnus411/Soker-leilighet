@@ -24,15 +24,15 @@ export default function Header() {
             </p>
           </motion.div>
           <p className="text-lg mt-5 md:mt-2 mb-3">
-            Vi er Magnus og Maren, et par på jakt etter en leilighet Trondheim.
-            Vi er begge studenter ved NTNU, med Magnus som går Dataingeniør og
-            Maren som nesten er ferdig med en Batchlor i Engelsk.
+            Vi er Magnus og Maren, et par på jakt etter en leilighet i
+            Trondheim. Vi er begge studenter ved NTNU, med Magnus som går
+            Dataingeniør og Maren som er snart ferdig med en Bachelor i Engelsk.
           </p>
           <p className="text-lg mt-5 md:mt-2">
             Vi er på utkikk etter en leilighet som kan være vårt nye hjem, med
             nok plass til våre hobbyer daglige aktiviteter. Vi verdsetter et
-            ryddig hjem med god standard, og vil behandle din eiendom med den
-            største respekt.
+            ryddig hjem med god standard, og vil behandle din eiendom med stor
+            respekt.
           </p>
           <p className="text-lg mt-5 md:mt-2 font-semibold text-black">
             Vi ønsker å starte leieforholdet i Juli
@@ -69,7 +69,7 @@ export default function Header() {
                 alt="Description of the image"
                 width={800}
                 height={100}
-                objectFit="contain"
+                style={{ objectFit: "contain" }}
                 className="rounded-2xl"
               />
             </motion.div>

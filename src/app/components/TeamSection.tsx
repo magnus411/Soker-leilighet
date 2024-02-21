@@ -6,57 +6,58 @@ export default function TeamSection() {
     {
       title: "Magnus",
       introduction:
-        "Driven by an insatiable curiosity, Magnus thrives on the thrill of discovery, whether it's in the digital realm or the great outdoors.",
+        "23 år gammel student, født og oppvokst i trondheim og liker å lære meg nye ting ",
       imageUrl: "https://i.imgur.com/UOfmzog.jpeg",
       altText: "Magnus",
       sections: [
         {
-          heading: "Background & Ambitions",
+          heading: "Bakgrunn & Ambisjoner",
           content:
-            "With a background in computer science and a passion for sustainable technologies, Magnus is not just about bits and bytes but also about making a tangible impact on the environment.",
+            "Jeg er for tiden en engasjert dataingeniør-student ved NTNU, med kun ett år igjen før jeg oppnår min bachelorgrad. Jeg har i tilleg udanning innen nettverk og systemadministrasjon. I tillegg til min utdannelse har jeg opparbeidet meg mye erfaring gjennom en rekke år i arbeidslivet, hvor jeg har jobbet som selger, konsulent, design- og innholdsprodusent samt Teknisk Ansvarlig. Mitt profesjonelle mål er å kontinuerlig utvikle meg innenfor teknologi-bransjen, med et spesielt fokus på å oppnå en stilling som prosjektleder innenfor en teknologibedrift. Jeg er drevet av ønsket om å lede prosjekter som ikke bare utfordrer mine tekniske ferdigheter, men også mine lederegenskaper, og evne til kreativ problemløsning.",
         },
         {
-          heading: "Interests & Hobbies",
+          heading: "Interesser & Hobbier",
           content:
-            "From scaling rugged mountains to coding innovative software solutions, Magnus's interests are as varied as they are dynamic.",
+            "Jeg er en person med en bred palett av interesser, alltid nysgjerrig for å utforske nye ting. Fra å spille gitar, sy og buldre, til maling og dykking ned i programmeringsprosjekter, finner jeg glede i et mangfold av aktiviteter. Jeg verdsetter også roligere stunder, enten det er hjemme eller sammen med venner, hvor vi kan nyte en god serie.",
         },
         {
-          heading: "Professional Path",
+          heading: "Jobb",
           content:
-            "Currently navigating the world of tech startups, Magnus brings a blend of technical expertise and creative problem-solving to the table.",
+            "Jeg jobber for tiden som Teknisk Ansvarlig på Jotunheimen Esportsenter. I tilleg til dette har jeg litt private prosjekt jeg jobber på og tar av og til på meg konsulentjobber.",
         },
         {
-          heading: "Ability to pay",
+          heading: "Betalingsevne",
           content:
-            "Yes, I can pay the rent. I have a stable job and a good income",
+            "Jeg har fast deltidsjobb, stipend og studielån, samt nok penger til å dekke over et år med husleie.",
         },
       ],
     },
     {
       title: "Maren",
       introduction:
-        "With a palette as vibrant as her personality, Maren finds joy in every hue of life, painting her days with creativity and inspiration.",
+        "21 år gammel studentog kommer fra Namsos. Jeg liker å tilbringe tiden ute blant venner, eller se en god krim-serie.",
       imageUrl: "https://i.imgur.com/UOfmzog.jpeg",
       altText: "Maren",
       sections: [
         {
-          heading: "Artistic Endeavors",
+          heading: "Bakgrunn & Ambisjoner",
           content:
-            "A skilled artist and designer, Maren's work is a testament to her ability to blend colors and concepts in mesmerizing ways.",
+            "Jeg er nesten ferdig med en bachelorgrad i engelsk og har også fullført et årsstudium i likestilling og mangfold. Planen min er å ta en Master i Likestilling & Mangfold etter jeg er ferdig med bacheloren. Målet mitt er å bruke min utdannelse til å arbeide i roller som lar meg gjøre en forskjell, spesielt innen utdanning, velferd eller i andre organisasjoner der jeg kan gjøre en forskjell.",
         },
         {
-          heading: "Passions & Pursuits",
+          heading: "Interesser & Hobbier",
           content:
-            "Whether it's experimenting with new art techniques or curating the perfect playlist, Maren's passions are a reflection of her eclectic tastes.",
+            "Ved siden av studiene liker jeg å fordype meg i ulike hobbyer. Strikking er en avslappende aktivitet for meg, men også en måte å uttrykke min kreative side på. Jeg elsker også å tilbringe tid med mine venner, enten det er gjennom sosiale sammenkomster eller ved å utforske nye steder og kulturer gjennom musikk og festivaler.",
         },
         {
-          heading: "Career & Creativity",
+          heading: "Jobb",
           content:
-            "Balancing a career in graphic design with personal art projects, Maren navigates the creative process with grace and gusto.",
+            "I sommermånedene jobber jeg i klesbutikken Cubus i Namsos. Også i år skal jeg jobbe på Cubus over sommeren.",
         },
         {
-          heading: "Ability to pay",
-          content: "Yes, I am stackd. ",
+          heading: "Betalingsevne",
+          content:
+            "Med fullt stipend og studielån, samt inntekter fra sommerjobben, har jeg en stabil økonomi og erfaring fra tidligere leieforhold, noe som gjør meg til en pålitelig og ansvarlig leietaker.",
         },
       ],
     },
@@ -114,23 +115,20 @@ function AboutUs({ content, flip }: any) {
         ))}
       </motion.div>
       <motion.div
-        className="flex-1 flex justify-center items-center p-4 md:p-12  "
+        className="flex-1 flex justify-center items-center p-4 md:p-8"
         variants={sectionVariants}
         transition={{ type: "spring", stiffness: 100 }}
       >
-        <div className="rounded-xl  h-full bg-[#cbffe7] p-16">
-          <div className="w-full max-w-xs md:max-w-sm  mx-auto">
-            <div className="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-2 ">
-              <Image
-                src={content.imageUrl}
-                alt={content.altText}
-                className="rounded-lg shadow-xl"
-                width={700} // Adjust based on layout responsiveness
-                height={100} // Adjust based on layout responsiveness
-                objectFit="cover" // Changed to cover for better mobile viewing
-                layout="responsive"
-              />
-            </div>
+        <div className="flex justify-center items-center bg-[#cbffe7] rounded-2xl p-12 md:p-16">
+          <div className="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-2">
+            <Image
+              src={content.imageUrl}
+              alt={content.altText}
+              className="rounded-2xl shadow-xl"
+              width={400} // Reduced size for better fitting
+              height={300} // Reduced size for better fitting
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </motion.div>

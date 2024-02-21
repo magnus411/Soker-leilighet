@@ -17,7 +17,7 @@ export default function ApartmentCriteria() {
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">God Standard</h3>
-          <p>Vi søker en konfertabel leilighet med god moderne standard</p>
+          <p>Vi søker en komfortabel leilighet med god moderne standard</p>
         </div>
 
         {/* Bathroom */}
@@ -25,7 +25,7 @@ export default function ApartmentCriteria() {
           <FaBath className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Baderom</h3>
           <p>
-            Et rent, ryddig og funsjonabelt baderom med litt plass er ønsket.
+            Et rent, ryddig og funksjonelt baderom med litt plass er ønsket.
           </p>
         </div>
 
@@ -47,16 +47,15 @@ export default function ApartmentCriteria() {
         <div className="flex flex-col items-center text-center">
           <FaRulerCombined className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Størrelse</h3>
-          <p>Seeking spaces over 30m² for comfort and freedom.</p>
           <p>Vi søker et sted med over 30m² for komfort og frihet.</p>
         </div>
 
         {/* Location */}
         <div className="flex flex-col items-center text-center">
           <FaMapMarkerAlt className="text-4xl mb-4" />
-          <h3 className="text-xl font-semibold">Lokalisasjon</h3>
+          <h3 className="text-xl font-semibold">Lokasjon</h3>
           <p>
-            Helst sentralt i Trondheim, med gode muligheter for buss og kort
+            Helst sentralt i Trondheim, med gode muligheter for buss, og god
             tilgang til dagligvarebutikk.
           </p>
         </div>

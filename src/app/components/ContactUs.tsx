@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from "react";
+import { sendEmail } from "./Actions";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -15,7 +18,7 @@ export default function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     // Process the form data, such as sending an email or storing in a database.
     console.log(formData);
@@ -26,17 +29,28 @@ export default function ContactUs() {
       message: "",
     });
     // Add a success notification or handling here
-    alert("Message sent successfully!");
+    try {
+      if (!formData.name || !formData.email || !formData.message) {
+        throw new Error("All fields are required");
+      }
+      await sendEmail(formData.name, formData.email, formData.message);
+      alert("Message sent successfully!");
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (
     <div className="bg-background  pt-6 pb-6 pl-4 pr-4 md:pt-12 md:pb-12 md:pl-96 md:pr-96">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8">
-        Contact Us
+        Kontakt oss!
       </h2>
-      <p className="text-md md:text-lg text-center mb-4 md:mb-6">
-        Have a question or want to get in touch? Send us a message! or call
-        48218789 or email magnusgjerstad00@gmail.com
+      <p className="text-md md:text-lg text-center ">
+        Har du et spørsmål eller vil vite mer om oss, send oss gjerne en email
+        eller ring oss!
+      </p>
+      <p className="text-center font-semibold text-md md:text-lg mb-4 md:mb-6">
+        Tlf: 48218789, Email: magnusgjerstad00@gmail.com
       </p>
       <form className="w-full mx-auto" onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -44,7 +58,7 @@ export default function ContactUs() {
             htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-900"
           >
-            Your Name
+            Ditt Navn
           </label>
           <input
             type="text"
@@ -61,7 +75,7 @@ export default function ContactUs() {
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900"
           >
-            Your Email
+            Din E-post
           </label>
           <input
             type="email"
@@ -78,7 +92,7 @@ export default function ContactUs() {
             htmlFor="message"
             className="block mb-2 text-sm font-medium text-gray-900"
           >
-            Your Message
+            Din Melding
           </label>
           <textarea
             id="message"
