@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img01 from "/public/images/02.jpg";
 
 export default function Header() {
   return (
@@ -62,7 +61,7 @@ export default function Header() {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src={img01}
+                src={"images/02.jpg"}
                 alt="Description of the image"
                 width={800}
                 height={100}
