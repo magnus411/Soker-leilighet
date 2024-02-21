@@ -1,0 +1,61 @@
+function AboutUs({ content, flip, bg }: any) {
+  if (!content) {
+    return <div>Content is not available</div>;
+  }
+
+  const sectionVariants = {
+    initial: { opacity: 0, x: flip ? 100 : -100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: flip ? -100 : 100 },
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className={` flex flex-col md:flex-row pl-48 pr-48 pt-12 pb-12 ${
+        flip ? "md:flex-row-reverse bg-[#eefdee]" : "bg-[#fdfdf6]"
+      }`}
+    >
+      <motion.div
+        className="flex-1 p-12  "
+        variants={sectionVariants}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <h2 className="text-8xl font-bold text-black mb-4 italic">
+          {content.title}
+        </h2>
+        <p className="text-lg text-gray-900 mb-6">{content.introduction}</p>
+        {content.sections.map((section: any, index: any) => (
+          <div key={index} className="mb-8">
+            {section.icon}
+            <h3 className="text-3xl font-semibold text-black mb-2">
+              {section.heading}
+            </h3>
+            <p className="text-lg text-gray-900">{section.content}</p>
+          </div>
+        ))}
+      </motion.div>
+      <motion.div
+        className="flex-1 flex justify-center items-center p-12 "
+        variants={sectionVariants}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <div className="w-full max-w-md mx-auto">
+          <div className="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-2">
+            <Image
+              src={content.imageUrl}
+              alt={content.altText}
+              className="rounded-lg shadow-xl"
+              width={700}
+              height={100}
+              objectFit="contain"
+              layout="responsive"
+            />
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}

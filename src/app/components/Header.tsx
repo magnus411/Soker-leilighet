@@ -4,10 +4,10 @@ import img01 from "/public/images/02.jpg";
 
 export default function Header() {
   return (
-    <div className="bg-background w-screen  md:pt-24 md:pl-24 md:pr-24 ">
+    <div className="bg-background   md:pt-24 md:pl-24 md:pr-24 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ">
         <motion.div
-          className="pt-16 pl-16 pr-16 pb-2 md:p-24"
+          className="  p-8  md:p-24"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -17,28 +17,34 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <h1 className="text-7xl font-bold italic">
-              MAGNUS OG MAREN SØKER !
+            <h1 className="text-4xl md:text-7xl font-bold italic">
+              MAGNUS OG MAREN SØKER
             </h1>
-            <p className="text-7xl font-bold italic bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
+            <p className="text-6xl md:text-7xl font-bold italic bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
               LEILIGHET!
             </p>
           </motion.div>
-          <p className="text-3xl mt-5 md:mt-2">
-            Litt mer om oss lorum ipsum Litt mer om oss lorum ipsumLitt mer om
-            oss lorum ipsumLitt mer om oss lorum ipsumLitt mer om oss lorum
-            ipsum
+          <p className="text-lg mt-5 md:mt-2 mb-3">
+            Vi er Magnus og Maren, et par på jakt etter vårt nye hjem. Vi er
+            begge yrkesaktive, med Magnus som IT-Ansvarlig og Maren som spion.
           </p>
+          <p className="text-lg mt-5 md:mt-2">
+            Vi er på utkikk etter en leilighet som kan være vårt trygge og
+            koselige rede, med nok plass til både våre hobbyer og spion
+            sammenkomster. Vi verdsetter et rent og ryddig hjem, og vil behandle
+            din eiendom med største respekt og omsorg.
+          </p>
+
           <div className="mt-5 gap-4 grid grid-cols-2 md:pr-24 pr-3">
             <motion.button
-              className="bg-[#8ad4d2] text-gray-900 text-lg md:text-xl p-3 rounded-lg"
+              className="bg-[#8ad4d2] text-gray-900 text-md md:text-xl p-3 rounded-lg"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.99 }}
             >
               Les mer om oss
             </motion.button>
             <motion.button
-              className="bg-primary text-gray-900 text-lg md:text-xl p-3 rounded-lg"
+              className="bg-primary text-gray-900 text-sm md:text-xl p-3 rounded-lg"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.99 }}
             >
@@ -60,9 +66,7 @@ export default function Header() {
                 alt="Description of the image"
                 width={800}
                 height={100}
-                style={{
-                  objectFit: "contain",
-                }}
+                objectFit="contain"
                 className="rounded-2xl"
               />
             </motion.div>

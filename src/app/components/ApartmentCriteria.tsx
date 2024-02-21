@@ -8,9 +8,11 @@ import {
 
 export default function ApartmentCriteria() {
   return (
-    <div className="bg-background w-screen pt-24 pb-12 pl-48 pr-48">
-      <h2 className="text-5xl font-bold mb-6">What We Are Looking For</h2>
-      <div className="grid grid-cols-3 gap-8">
+    <div className="bg-background w-full pt-12 pb-6 px-6 md:px-48">
+      <h2 className="text-4xl text-center md:text-left  md:text-6xl font-bold mb-8 md:mb-12">
+        Hva vi ser etter
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {/* Decent Standard */}
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
