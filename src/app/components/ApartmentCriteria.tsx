@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-export default function ApartmentCriteria() {
+export default function ApartmentCriteria(ref: any) {
   return (
     <div className="bg-background w-full pt-12 pb-6 px-6 md:px-48">
       <h2 className="text-4xl text-center md:text-left  md:text-6xl font-bold mb-8 md:mb-12">
@@ -17,7 +17,7 @@ export default function ApartmentCriteria() {
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">God Standard</h3>
-          <p>Vi søker en komfortabel leilighet med god moderne standard</p>
+          <p>Vi søker en komfortabel leilighet med god moderne standard.</p>
         </div>
 
         {/* Bathroom */}
@@ -25,7 +25,8 @@ export default function ApartmentCriteria() {
           <FaBath className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Baderom</h3>
           <p>
-            Et rent, ryddig og funksjonelt baderom med litt plass er ønsket.
+            Et velholdt og funksjonelt baderom med romslig utforming er
+            ønskelig.
           </p>
         </div>
 
@@ -33,7 +34,9 @@ export default function ApartmentCriteria() {
         <div className="flex flex-col items-center text-center">
           <FaUtensils className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Kjøkken</h3>
-          <p>Et kjøkken hvor vi kan lage mat og nyte måltider sammen.</p>
+          <p>
+            Et praktisk kjøkken hvor vi kan lage mat og nyte måltider sammen.
+          </p>
         </div>
 
         {/* Budget */}
@@ -47,7 +50,7 @@ export default function ApartmentCriteria() {
         <div className="flex flex-col items-center text-center">
           <FaRulerCombined className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Størrelse</h3>
-          <p>Vi søker et sted med over 30m² for komfort og frihet.</p>
+          <p>Vi søker et sted med over 30m².</p>
         </div>
 
         {/* Location */}
@@ -55,8 +58,8 @@ export default function ApartmentCriteria() {
           <FaMapMarkerAlt className="text-4xl mb-4" />
           <h3 className="text-xl font-semibold">Lokasjon</h3>
           <p>
-            Helst sentralt i Trondheim, med gode muligheter for buss, og god
-            tilgang til dagligvarebutikk.
+            Helst sentralt i Trondheim, med gode muligheter for buss, og i
+            nærheten av dagligvarebutikk.
           </p>
         </div>
       </div>
