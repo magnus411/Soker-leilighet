@@ -6,7 +6,7 @@ export default function TeamSection() {
     {
       title: "Magnus",
       introduction:
-        "23 år gammel student, født og oppvokst i trondheim og liker å lære meg nye ting ",
+        "23 år gammel student, født og oppvokst i trondheim og liker å lære meg nye ting. ",
       imageUrl: "https://i.imgur.com/ew51bpc.jpg",
       altText: "Magnus",
       sections: [
@@ -23,7 +23,7 @@ export default function TeamSection() {
         {
           heading: "Jobb",
           content:
-            "Jeg jobber for tiden som Teknisk Ansvarlig på Jotunheimen Esportsenter. I tilleg til dette har jeg noen private prosjekter, og tar av og til på meg konsulentjobber.",
+            "Jeg jobber for tiden som Teknisk Ansvarlig på Jotunheimen Esportsenter. I tillegg til dette har jeg noen private prosjekter, og tar av og til på meg konsulentjobber.",
         },
         {
           heading: "Betalingsevne",
